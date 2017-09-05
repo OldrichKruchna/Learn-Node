@@ -18,7 +18,8 @@ router.get('/reverse/:name', (req, res) => {
 router.get('/hello/:name/:dog', (req, res) => {
   res.render('helloExtends', {
     name: req.params.name,
-    dog: req.params.dog
+    dog: req.params.dog,
+    title: 'I love food'
   });
   // res.send('<h1>Hello!</h1>');
 });
